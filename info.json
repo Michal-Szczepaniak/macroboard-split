@@ -25,11 +25,15 @@
     "split": {
         "enabled": true,
         "matrix_pins": {
+        	"right": {
+                "cols": ["A7", "A6", "A5", "B10", "B1", "B0"],
+                "rows": ["A4", "A3", "A2", "A1", "A0", "B9"]
+        	}
         },
-		"main": "eeprom",
-		"transport": {
-		    "protocol": "serial_usart"
-		}
+        "main": "eeprom",
+        "transport": {
+            "protocol": "serial_usart"
+        }
     },
     "mouse_key": {
         "enabled": true
