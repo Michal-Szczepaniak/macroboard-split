@@ -1,12 +1,12 @@
 {
     "manufacturer": "QMK",
-    "keyboard_name": "dactyl_magister",
+    "keyboard_name": "macroboard_split",
     "maintainer": "Michał Szczepaniak",
     "bootloader": "stm32-dfu",
     "bootmagic": {
         "enabled": true
     },
-    "debounce": 5,
+    "debounce": 8,
     "diode_direction": "COL2ROW",
     "features": {
         "audio": false,
@@ -17,18 +17,18 @@
         "nkro": true,
         "rgblight": false
     },
-    "keyboard_folder": "handwired/dactyl_magister",
+    "keyboard_folder": "handwired/macroboard_split",
     "matrix_pins": {
-        "cols": ["A15", "B3", "B4", "B9", "B8", "B5"],
-        "rows": ["A8", "B15", "B14", "B13", "B12", "A0"]
+        "cols": ["B12", "B13", "B14", "A15", "B4", "B9"],
+        "rows": ["B15", "A8", "B5", "B8", "A0"]
     },
     "split": {
         "enabled": true,
         "matrix_pins": {
-        	"right": {
-                "cols": ["A7", "A6", "A5", "B10", "B1", "B0"],
-                "rows": ["A4", "A3", "A2", "A1", "A0", "B9"]
-        	}
+            "right": {
+                "cols": ["A5", "A3", "B1", "B0", "A0", "A2"],
+                "rows": ["B10", "A7", "A6", "A4", "A1"]
+            }
         },
         "main": "eeprom",
         "transport": {
@@ -82,10 +82,6 @@
                 { "label": "L403", "matrix": [4, 3], "w": 1, "x": 3, "y": 4 },
                 { "label": "L404", "matrix": [4, 4], "w": 1, "x": 4, "y": 4 },
                 { "label": "L405", "matrix": [4, 5], "w": 1, "x": 5, "y": 4 },
-                { "label": "L502", "matrix": [5, 4], "w": 1, "x": 2, "y": 5 },
-                { "label": "L503", "matrix": [5, 2], "w": 1, "x": 3, "y": 5 },
-                { "label": "L504", "matrix": [5, 5], "w": 1, "x": 4, "y": 5 },
-                { "label": "L505", "matrix": [5, 3], "w": 1, "x": 5, "y": 5 },
                 { "label": "R006", "matrix": [6, 6], "w": 1, "x": 6, "y": 6 },
                 { "label": "R007", "matrix": [6, 7], "w": 1, "x": 7, "y": 6 },
                 { "label": "R008", "matrix": [6, 8], "w": 1, "x": 8, "y": 6 },
@@ -115,9 +111,7 @@
                 { "label": "R408", "matrix": [10, 8], "w": 1, "x": 8, "y": 10 },
                 { "label": "R409", "matrix": [10, 9], "w": 1, "x": 9, "y": 10 },
                 { "label": "R410", "matrix": [10, 10], "w": 1, "x": 10, "y": 10 },
-                { "label": "R411", "matrix": [10, 11], "w": 1, "x": 11, "y": 10 },
-                { "label": "R506", "matrix": [11, 6], "w": 1, "x": 6, "y": 11 },
-                { "label": "R507", "matrix": [11, 7], "w": 1, "x": 7, "y": 11 }
+                { "label": "R411", "matrix": [10, 11], "w": 1, "x": 11, "y": 10 }
             ]
         }
     }

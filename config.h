@@ -29,7 +29,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define IGNORE_MOD_TAP_INTERRUPT
 #define HOLD_ON_OTHER_KEY_PRESS
 
-#define POINTING_DEVICE_DEBUG
-#define SPLIT_POINTING_ENABLE
-#define POINTING_DEVICE_RIGHT
-#define PMW33XX_CS_PIN B12
+#define TAP_CODE_DELAY 10
